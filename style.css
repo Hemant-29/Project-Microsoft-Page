@@ -1,0 +1,471 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  padding-left: 26px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+#headerBar {
+  display: flex;
+  padding-left: 4%;
+  padding-right: 4%;
+  max-height: 50px;
+}
+
+.NavBarButtons {
+  display: inline-block;
+  padding: 16px 8px 10px 8px;
+  border: 0.721px;
+  margin-top: 1px;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.NavBarButtons:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.8px;
+  text-underline-offset: 5px;
+}
+
+#BrandLogo {
+  padding: 16px 6px 16px 10px;
+}
+
+#navigationBar {
+  display: block;
+  padding: 0px 1px 0px 2px;
+}
+
+.flexedButtons {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+#flexedSearch {
+  padding: 15px 0px 30px 0px;
+  margin: 0px 8px 1px 8px;
+}
+
+#Hamburger {
+  padding: 15px 0px 30px 0px;
+  margin: 0px 7px 1px 10px;
+}
+
+#actionButtons {
+  display: flex;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+#searchButton {
+  padding: 15px 9px 30px 9px;
+  margin: 0px 6px 1px 6px;
+}
+
+#allMicrosoft {
+  padding: 16px 20px 16px 15px;
+}
+#allMicrosoft:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.8px;
+  text-underline-offset: 5px;
+}
+
+#yourCart {
+  padding-top: 14px;
+  padding-bottom: 8px;
+  margin-left: 7px;
+  margin-right: 10px;
+}
+
+#userAccount {
+  margin: 8px 8px 8px 8px;
+}
+
+@media (max-width: 860px) {
+  #headerBar {
+    padding: 0px;
+  }
+  .NavBarButtons {
+    display: none;
+  }
+  #allMicrosoft {
+    display: none;
+  }
+  #searchButton {
+    display: none;
+  }
+  #BrandLogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 860px) {
+  .flexedButtons {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.carousel {
+  position: relative;
+}
+
+.carouselImage {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carouselImageScrollable {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scrollingImages {
+  position: relative;
+  left: 100%;
+  width: 100%;
+  flex: 1 1 200px;
+  /* Animation */
+  /* animation: scrollCarousel 20s infinite; */
+}
+
+@media (max-width: 1000px) {
+  .carouselImage img {
+    position: relative;
+    right: 13%;
+    width: 150%;
+  }
+}
+
+.cardCarousel {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.368);
+  padding: 2.5em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  position: relative;
+  bottom: 2em;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1000px) {
+  .cardCarousel {
+    position: absolute;
+    margin: 0px;
+    width: 35%;
+    left: 80px;
+    top: 80px;
+    height: 300px;
+  }
+}
+
+.cardCarousel span {
+  display: inline-block;
+  background-color: #ffb900;
+  padding: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+.cardCarousel h3 {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.cardCarousel p {
+  margin-bottom: 24px;
+}
+
+.cardCarousel a {
+  background-color: #0067b8;
+  color: white;
+  padding: 8px;
+}
+
+.carouselControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* width: 250px; */
+  margin: 40px auto;
+  /* border: 2px solid red; */
+}
+
+.carouselControls button {
+  box-sizing: border-box;
+  border: none;
+  margin: 15px;
+  width: 40px;
+  height: 20px;
+  transition: padding 0.2s;
+
+  font-size: 20px;
+  font-weight: 100;
+  background-color: transparent;
+  text-wrap: nowrap;
+}
+
+#carousel-right:hover {
+  padding-left: 15px;
+}
+#carousel-left:hover {
+  padding-right: 15px;
+}
+
+.carouselControls li {
+  margin: 10px;
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+#iconsGrid1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.GridIcons1 {
+  display: inline-block;
+  margin: 16px 24px 16px 24px;
+  text-align: center;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+/* original - "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+/* ----------------------------------------------------------------------------------------- */
+
+.cardsSection {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 12px;
+  margin-bottom: 48px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.368);
+  flex: 1 1 214px; /* Flex grow, shrink, and basis properties */
+  /* minimum width for the cards : 214px */
+}
+
+.cardImage {
+  width: 100%;
+}
+
+.cardHeader {
+  padding: 24px 0px 24px 16px;
+}
+
+.cardBody {
+  padding-left: 24px;
+  padding-right: 24px;
+  flex-grow: 1;
+}
+
+.cardFooter {
+  padding: 16px 24px 24px 24px;
+  text-wrap: wrap;
+}
+
+@media (min-width: 540px) and (max-width: 1090px) {
+  .cardsSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px; /* Adjusts the space between cards */
+  }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.followContainer h2 {
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: 350;
+  display: inline-block;
+}
+.followContainer ul {
+  vertical-align: middle;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+.followContainer li {
+  padding-left: 15px;
+  display: inline;
+}
+
+.backToTop {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+  padding: 8px 15px 8px 15px;
+  background-color: rgb(200, 199, 199);
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.368);
+  position: absolute;
+  right: 0px;
+  /* visibility: hidden; */
+  opacity: 0; /* Initial opacity for smooth fade */
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transition properties */
+}
+
+.backToTop:hover {
+  background-color: white;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.footerArea {
+  background-color: rgb(236, 234, 234);
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.footerNavigation {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.footerNavRow {
+  display: flex;
+
+  flex-grow: 1;
+}
+
+.footerNavSections {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footerNavHeading {
+  padding-top: 36px;
+  nav-down: 4px;
+}
+
+.footerNavEntries {
+  font-size: 12px;
+  font-weight: 200;
+  color: #616161;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footerNavEntries li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.footerNavEntries li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1083px) {
+  .footerNavigation {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footerNavRow {
+    flex-direction: column;
+  }
+}
+
+.footerBase {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 300;
+  align-items: center;
+  padding: 30px 24px 16px 24px;
+}
+
+.footerBase a {
+  display: inline-block;
+  padding-right: 24px;
+  padding-top: 4px;
+}
+
+.footerBottomNav {
+  /* position: absolute; */
+  right: 0px;
+  margin-left: auto;
+}
+
+.footerBottomNav ul {
+  display: flex;
+  list-style-type: none;
+}
+.footerBottomNav ul li {
+  text-wrap: nowrap;
+  vertical-align: middle;
+  padding-right: 24px;
+  padding-bottom: 4px;
+}
+
+.footerBottomNav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1083px) {
+  .footerBase {
+    align-items: normal;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .footerBottomNav {
+    margin: 0px;
+    justify-content: left;
+  }
+  .footerBottomNav ul {
+    padding: 0px;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------- */
